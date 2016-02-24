@@ -24,12 +24,12 @@ function MavenProject (folder) {
     replace(conf);
 
     moveFolder(sourcePackage, destPackage, path.join(destFolder, '/src/main/java'));
-    //moveFolder(sourcePackage, destPackage, path.join(destFolder, '/src/test/java'));
+    moveFolder(sourcePackage, destPackage, path.join(destFolder, '/src/test/java'));
   };
 };
 
 var moveFolder = function (sourcePackage, destPackage, folder) {
-  //console.log('moveFolder',sourcePackage, destPackage, folder);
+  console.log('moveFolder',sourcePackage, destPackage, folder);
 
   var sourceFolders = sourcePackage.split('.');
   if (sourceFolders.length > 0 && sourceFolders[0].length > 0) {
