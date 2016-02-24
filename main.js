@@ -24,7 +24,7 @@ function MavenProject (folder) {
     replace(conf);
 
     moveFolder(sourcePackage, destPackage, path.join(destFolder, '/src/main/java'));
-    moveFolder(sourcePackage, destPackage, path.join(destFolder, '/src/test/java'));
+    //moveFolder(sourcePackage, destPackage, path.join(destFolder, '/src/test/java'));
   };
 };
 
